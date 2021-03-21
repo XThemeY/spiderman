@@ -22,6 +22,8 @@ module.exports = function server(cb) {
 	watch('./src/fonts/**/*.*', gulp.series(fonts.dist)).on('change', browserSync.reload)
 	watch('./src/img/**/*.*', gulp.series(imageMinify.dist)).on('change', browserSync.reload)
 	watch('./src/js/**/*.*', gulp.series(script.dist)).on('change', browserSync.reload)
-	watch('./src/libs/**/*.*', gulp.series(libs.dist)).on('change', browserSync.reload)	
+	watch('./src/libs/**/*.*', gulp.series(libs.dist)).on('change', browserSync.reload)
+	watch('./src/libs/**/*.*', gulp.series(libs.dist)).on('change', browserSync.reload)
+	watch('./src/**/*.*',gulp.series(libs.copyToDocs))
 	return cb()
 }
