@@ -1,0 +1,26 @@
+@import "../../node_modules/normalize.css/normalize.css";
+@import "./base/base";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;	
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+	display: block;
+}
+
+a{
+	text-decoration: none;
+}

@@ -1,0 +1,12 @@
+{
+	"plugins": [
+		"stylelint",
+		"stylelint-scss",
+		"gulp-stylelint"
+	],
+	"extends": [
+		"stylelint-config-htmlacademy",
+		"stylelint-config-standard",
+		"stylelint-scss"
+	]
+}

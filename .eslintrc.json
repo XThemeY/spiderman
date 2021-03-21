@@ -1,0 +1,29 @@
+{
+	"parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+	"extends": [
+		"standard",
+		"htmlacademy/es6"
+	],
+	"rules": {
+		"indent": [
+			"error",
+			4
+		],
+		"semi": [
+			"error",
+			"never"
+		],
+		"quotes": [
+			"error",
+			"backtick"
+		]
+	}
+}
