@@ -1,0 +1,44 @@
+.header {
+    position: relative;
+    height: 530px;
+}
+
+.header-bg {
+    position: absolute;
+    z-index: -1;
+    height: inherit;
+    .bg-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left bottom;
+    }
+}
+
+.header-img {
+    position: absolute;
+    bottom: 11px;
+    left: 55%;
+    width: 220px;
+    height: 220px;
+    transform: translateX(-50%);
+}
+
+.header-wrapper {
+    padding-top: 30px;
+}
+
+.header__vs-header {
+    margin-bottom: 35px;
+}
+
+.header__vb-header {
+    text-align: center;
+	margin-bottom: 30px;
+}
+
+.main-desc{
+	padding: 0 30px;
+	text-align: center;
+	font-size: 1.4rem;
+}

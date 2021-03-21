@@ -24,6 +24,6 @@ module.exports = function server(cb) {
 	watch('./src/js/**/*.*', gulp.series(script.dist)).on('change', browserSync.reload)
 	watch('./src/libs/**/*.*', gulp.series(libs.dist)).on('change', browserSync.reload)
 	watch('./src/libs/**/*.*', gulp.series(libs.dist)).on('change', browserSync.reload)
-	watch('./src/**/*.*',gulp.series(libs.copyToDocs))
+	watch('./src/**/*.*',gulp.series(libs.copyToDocs)).on('change', browserSync.reload)
 	return cb()
 }

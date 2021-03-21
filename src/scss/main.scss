@@ -16,11 +16,11 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: $fontFamily;
-    color: black;
+    color: white;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -48,11 +48,15 @@ h5,
 h6 {
     padding: 0;
     margin: 0;
+    font-family: "Kurale", serif;
+	font-weight: normal;
 }
 
 p {
     padding: 0;
     margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
 }
 
 button {
@@ -81,4 +85,12 @@ input[type="text"] {
     content: "";
     clear: both;
     display: block;
+}
+
+.vb-header {
+    font-size: 3.6rem;
+}
+
+.vs-header {
+    font-size: 1.1rem;
 }
