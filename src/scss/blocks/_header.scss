@@ -147,13 +147,13 @@
 
 .header-content {
     float: right;
-    
-	@include media-tablet {
+
+    @include media-tablet {
         & {
             width: 350px;
         }
     }
-	@include media-pc {
+    @include media-pc {
         & {
             width: 650px;
         }
