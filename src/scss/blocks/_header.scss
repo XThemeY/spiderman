@@ -1,14 +1,19 @@
 .header {
     position: relative;
     height: 530px;
+    @include media-tablet {
+        & {
+            height: 700px;
+        }
+    }
 }
 
 .header-bg {
     position: absolute;
     z-index: -1;
     height: inherit;
+
     .bg-img {
-        width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: left bottom;
@@ -22,23 +27,158 @@
     width: 220px;
     height: 220px;
     transform: translateX(-50%);
+
+    @include media-tablet {
+        & {
+            bottom: 16px;
+            width: 465px;
+            height: 465px;
+            left: 50px;
+            transform: none;
+        }
+    }
+    @include media-pc {
+        & {
+            bottom: 71px;
+            width: 520px;
+            left: 12%;
+        }
+    }
 }
 
 .header-wrapper {
     padding-top: 30px;
+    @include media-tablet {
+        & {
+            padding-top: 45px;
+        }
+    }
+    @include media-pc {
+        & {
+            padding-top: 70px;
+        }
+    }
 }
 
-.header__vs-header {
-    margin-bottom: 35px;
+.vs-header {
+    font-size: 1.1rem;
+
+    @include media-tablet {
+        & {
+            font-size: 1.8rem;
+        }
+    }
+    @include media-pc {
+        & {
+            font-size: 2.4rem;
+        }
+    }
 }
 
 .header__vb-header {
+    font-size: 3.6rem;
     text-align: center;
-	margin-bottom: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    @include media-tablet {
+        & {
+            font-size: 4.5rem;
+        }
+    }
+    @include media-pc {
+        & {
+            font-size: 6.8rem;
+        }
+    }
 }
 
-.main-desc{
-	padding: 0 30px;
-	text-align: center;
-	font-size: 1.4rem;
+.main-desc {
+    padding: 0 30px;
+    text-align: center;
+    font-size: 1.4rem;
+    @include media-tablet {
+        & {
+            font-size: 1.8rem;
+        }
+    }
+    @include media-pc {
+        & {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.header-menu {
+    font-family: "Open Sans", sans-serif;
+    display: none;
+    font-size: 1.1rem;
+
+    li + li {
+        margin-left: 40px;
+    }
+
+    @include media-tablet {
+        & {
+            display: flex;
+            font-size: 1.6rem;
+        }
+    }
+    @include media-pc {
+        & {
+            font-size: 2rem;
+        }
+    }
+}
+
+.nav {
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-tablet {
+        & {
+            padding: 0 50px;
+            margin-bottom: 120px;
+        }
+    }
+}
+
+.header-content {
+    float: right;
+    
+	@include media-tablet {
+        & {
+            width: 350px;
+        }
+    }
+	@include media-pc {
+        & {
+            width: 650px;
+        }
+    }
+    .wrapper {
+        display: flex;
+    }
+}
+
+.social {
+    display: none;
+    font-size: 1.8rem;
+
+    @include media-tablet {
+        & {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.social-link {
+    & + & {
+        margin-top: 60px;
+    }
 }
