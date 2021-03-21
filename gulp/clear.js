@@ -6,5 +6,8 @@ module.exports.build = function clean() {
 
 module.exports.dist = function clean() {
 	return 	del('./dist')
-	
+}
+
+module.exports.docs = function clean() {
+	return 	del('./docs')
 }

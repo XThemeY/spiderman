@@ -1,7 +1,11 @@
 const gulp = require('gulp')
 
-module.exports = function fonts() {
-	return gulp.src('src/fonts/**/*.*')
+module.exports.build = function fonts() {
+	return gulp.src('src/fonts/**/*.*')		
+		.pipe(gulp.dest('./build/fonts/'))		
+}
+
+module.exports.dist = function fonts() {
+	return gulp.src('src/fonts/**/*.*')		
 		.pipe(gulp.dest('./dist/fonts/'))
-		.pipe(gulp.dest('./build/fonts/'))
 }

@@ -1,4 +1,4 @@
-@import "../../node_modules/normalize.css/normalize.css";
+@import "./utils/_vars";
 @import "./base/base";
 
 *,
@@ -8,19 +8,77 @@
 }
 
 html {
-    box-sizing: border-box;	
+    box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body {
     margin: 0px;
     padding: 0px;
+    font-family: $fontFamily;
+    color: black;
 }
 
 img {
     max-width: 100%;
-	display: block;
+    display: block;
 }
 
-a{
-	text-decoration: none;
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    background: transparent;
+    font-family: $fontFamily;
+    &:focus {
+        outline: none;
+    }
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    display: inline-block;
+    font-family: $fontFamily;
+}
+
+input[type="text"] {
+    font-family: $fontFamily;
+    &:focus {
+        outline: none;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
 }
