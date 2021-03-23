@@ -16,8 +16,9 @@ html {
 body {
     margin: 0px;
     padding: 0px;
-    font-family: $fontFamily;
+    font-family: $fontFamilyMain;
     color: white;
+    background: #171c22;
 }
 
 img {
@@ -49,20 +50,20 @@ h5,
 h6 {
     padding: 0;
     margin: 0;
-    font-family: "Kurale", serif;
-	font-weight: normal;
+    font-family: $fontFamilyKurale;
+    font-weight: normal;
 }
 
 p {
     padding: 0;
     margin: 0;
-	font-family: 'Open Sans', sans-serif;
-	font-weight: normal;
+    font-family: $fontFamilyMain;
+    font-weight: normal;
 }
 
 button {
     background: transparent;
-    font-family: $fontFamily;
+    font-family: $fontFamilyMain;
     &:focus {
         outline: none;
     }
@@ -72,11 +73,11 @@ textarea {
     outline: none;
     resize: none;
     display: inline-block;
-    font-family: $fontFamily;
+    font-family: $fontFamilyMain;
 }
 
 input[type="text"] {
-    font-family: $fontFamily;
+    font-family: $fontFamilyMain;
     &:focus {
         outline: none;
     }
@@ -87,5 +88,3 @@ input[type="text"] {
     clear: both;
     display: block;
 }
-
-

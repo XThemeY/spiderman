@@ -1,87 +1,83 @@
 .header {
-    position: relative;
-    height: 530px;
+    width: 100%;
+    height: 600px;
     @include media-tablet {
         & {
-            height: 700px;
-        }
-    }
-}
-
-.header-bg {
-    position: absolute;
-    z-index: -1;
-    height: inherit;
-
-    .bg-img {
-        height: 100%;
-        object-fit: cover;
-        object-position: left bottom;
-    }
-}
-
-.header-img {
-    position: absolute;
-    bottom: 11px;
-    left: 55%;
-    width: 220px;
-    height: 220px;
-    transform: translateX(-50%);
-
-    @include media-tablet {
-        & {
-            bottom: 16px;
-            width: 465px;
-            height: 465px;
-            left: 50px;
-            transform: none;
+            height: 600px;
         }
     }
     @include media-pc {
         & {
-            bottom: 71px;
-            width: 520px;
-            left: 12%;
+            height: 600px;
         }
     }
+}
+.carousel {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.carousel-inner {
+}
+
+.carousel-item {
+    height: 600px;
+    .carousel-bg-img {
+        width: 362%;
+        @include media-tablet {
+            & {
+                width: 362%;
+            }
+        }
+        @include media-pc {
+            & {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.spider-img {
+    position: absolute;
+    bottom: 0px;
+    left: 14%;
+    width: 450px;
+    height: auto;
+}
+
+.fineas-img {
+    position: absolute;
+    bottom: 0px;
+    left: 15%;
+    width: 415px;
+    height: auto;
 }
 
 .header-wrapper {
-    padding-top: 30px;
+    margin-right: 15px;
+
+    margin-top: 95px;
+    float: right;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     @include media-tablet {
         & {
-            padding-top: 45px;
+            width: 300px;
         }
     }
     @include media-pc {
         & {
-            padding-top: 70px;
-        }
-    }
-}
-
-.vs-header {
-    font-size: 1.1rem;
-
-    @include media-tablet {
-        & {
-            font-size: 1.8rem;
-        }
-    }
-    @include media-pc {
-        & {
-            font-size: 2.4rem;
+            width: 550px;
         }
     }
 }
 
 .header__vb-header {
-    font-size: 3.6rem;
     text-align: center;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-
+    font-size: 3.6rem;
     @include media-tablet {
         & {
             font-size: 4.5rem;
@@ -89,14 +85,14 @@
     }
     @include media-pc {
         & {
+            margin-bottom: 35px;
+            padding-right: 190px;
             font-size: 6.8rem;
         }
     }
 }
 
 .main-desc {
-    padding: 0 30px;
-    text-align: center;
     font-size: 1.4rem;
     @include media-tablet {
         & {
@@ -105,80 +101,8 @@
     }
     @include media-pc {
         & {
+            padding-right: 60px;
             font-size: 2.4rem;
         }
-    }
-}
-
-.header-menu {
-    font-family: "Open Sans", sans-serif;
-    display: none;
-    font-size: 1.1rem;
-
-    li + li {
-        margin-left: 40px;
-    }
-
-    @include media-tablet {
-        & {
-            display: flex;
-            font-size: 1.6rem;
-        }
-    }
-    @include media-pc {
-        & {
-            font-size: 2rem;
-        }
-    }
-}
-
-.nav {
-    margin-bottom: 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include media-tablet {
-        & {
-            padding: 0 50px;
-            margin-bottom: 120px;
-        }
-    }
-}
-
-.header-content {
-    float: right;
-
-    @include media-tablet {
-        & {
-            width: 350px;
-        }
-    }
-    @include media-pc {
-        & {
-            width: 650px;
-        }
-    }
-    .wrapper {
-        display: flex;
-    }
-}
-
-.social {
-    display: none;
-    font-size: 1.8rem;
-
-    @include media-tablet {
-        & {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-}
-
-.social-link {
-    & + & {
-        margin-top: 60px;
     }
 }

@@ -1,8 +1,21 @@
+@import "./sprite";
 @import "../blocks/header";
+@import "../sections/navbar";
+@import "../blocks/mainpage";
 
-.container{
-	max-width:1200px;
-	margin: 0 auto;
-	padding: 0 15px
-	
+.container {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @include media-tablet {
+        & {
+            max-width: $mediaWidthTablet;
+        }
+    }
+    @include media-pc {
+        & {
+            max-width: $mediaWidthPC;
+        }
+    }
 }

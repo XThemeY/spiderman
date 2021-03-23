@@ -1,29 +1,29 @@
 @mixin media-phone-horizontal {
-    @media (min-width: $mediaWidthPhoneHorizontal) {
+    @media only screen and (min-width: $mediaWidthPhoneHorizontal) {
         @content;
     }
 }
 
 @mixin media-tablet {
-    @media (min-width: $mediaWidthTablet) {
+    @media only screen and (min-width: $mediaWidthTablet) {
         @content;
     }
 }
 
 @mixin media-laptop {
-    @media (min-width: $mediaWidthLaptop) {
+    @media only screen and (min-width: $mediaWidthLaptop) {
         @content;
     }
 }
 
 @mixin media-pc {
-    @media (min-width: $mediaWidthPC) {
+    @media only screen and (min-width: $mediaWidthPC) {
         @content;
     }
 }
 
 @mixin media-custom($width) {
-    @media (min-width: $width) {
+    @media only screen and (min-width: $width) {
         @content;
     }
 }

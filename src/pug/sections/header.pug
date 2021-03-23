@@ -1,17 +1,43 @@
+include ../mixins/svgMixin
+
 header.header
-	.header-bg
-		img.bg-img(src="./img/header/bg.jpg", alt="header-background")
-	.header-img
-		img(src="./img/header/image_1.png", alt="")
+	#carouselHeader.carousel.slide.carousel-fade(data-bs-ride='carousel' data-bs-interval="10000")
+		.carousel-inner
+			.carousel-item.active
+				img.carousel-bg-img.d-block(src='./img/header/bg_1.png' alt='...')
+				img.spider-img.d-block(src='./img/header/image_1.png' alt='...')
+			.carousel-item
+				img.fineas-img.d-block(src='./img/header/image_2.png' alt='...')
+			.carousel-item
+				img.carousel-bg-img.d-block(src='./img/header/bg_3.png' alt='...')
+		//- button.carousel-control-prev(type='button' data-bs-target='#carouselHeader' data-bs-slide='prev')
+		//- 	span.carousel-control-prev-icon(aria-hidden='true')
+		//- 	span.visually-hidden Previous
+		//- button.carousel-control-next(type='button' data-bs-target='#carouselHeader' data-bs-slide='next')
+		//- 	span.carousel-control-next-icon(aria-hidden='true')
+		//- 	span.visually-hidden Next	
+	nav.navigationbar
+		label.toggle-menu.clearfix
+			span
+		.container
+			label.logo DevilOnCall
+			ul.navmenu.clearfix
+				li
+					a(href="#") Главная
+				li#navAccordion
+					a(href="#") Мои работы
+					+icon("arrowDown")
+					ul.submenu
+						li
+							a(href="#") Человек Паук
+						li
+							a(href="#") Финеас Барнум
 	.container
-		.header-wrapper
-			nav.nav
-				h4.vs-header DevilOnCall
-				ul.header-menu
-					li Главная
-					li Мои образы
-			.header-content
+		.header-wrapper.clearfix
+			.header-desc
 				h1.header__vb-header DevilOnCall Cosplay
-				.wrapper
-					p.main-desc
-						|Cтремление стать лучше берет начало от образа, с которого мы берём пример
+				p.main-desc
+					|Cтремление стать лучше берет начало от образа, с которого мы берём пример
+			.social
+				+icon("arrowDown")
+				+icon("arrowDown")
