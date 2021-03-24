@@ -1,5 +1,6 @@
 .header {
     width: 100%;
+    min-width: 320px;
     height: 600px;
     @include media-tablet {
         & {
@@ -8,34 +9,34 @@
     }
     @include media-pc {
         & {
-			height: 760px;
+            height: 760px;
         }
     }
 }
 .carousel {
     position: absolute;
     width: 100%;
-	height: inherit;
+    min-width: inherit;
+    height: inherit;
     z-index: -1;
-	@include media-tablet {
+    @include media-tablet {
         & {
             height: inherit;
         }
     }
     @include media-pc {
         & {
-			height: inherit;
+            height: inherit;
         }
     }
 }
 
 .carousel-inner {
-	height: 100%;
-	
+    height: 100%;
 }
 
 .carousel-item {
-	height: 100%;
+    height: 100%;
     .carousel-bg-img {
         width: 362%;
         @include media-tablet {
@@ -45,7 +46,7 @@
         }
         @include media-pc {
             & {
-				width: 125%;
+                width: 125%;
             }
         }
     }
@@ -54,8 +55,8 @@
 .spider-img {
     position: absolute;
     bottom: 0px;
-    left: calc(100vw / 2 - 455px);
-    width: 450px;
+    left: calc(100vw / 2 - 120px);
+    width: 280px;
     height: auto;
     @include media-tablet {
         & {
@@ -74,12 +75,12 @@
 .fineas-img {
     position: absolute;
     bottom: 0px;
-    left: calc(100vw / 2 - 455px);
-    width: 415px;
+    left: calc(100vw / 2 - 95px);
+    width: 220px;
     height: auto;
     @include media-tablet {
         & {
-			left: calc(100vw / 2 - 325px);
+            left: calc(100vw / 2 - 325px);
             width: 345px;
         }
     }
@@ -92,37 +93,48 @@
 }
 
 .header-wrapper {
-    margin-top: 95px;
-    float: right;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    margin-top: 55px;
 
     @include media-tablet {
         & {
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 300px;
+            margin: 0;
+            margin-top: 90px;
             margin-right: 70px;
         }
     }
     @include media-pc {
         & {
             width: 570px;
-			margin-right: 25px;
-			margin-top: 185px;
+            margin-right: 25px;
+            margin-top: 185px;
         }
     }
 }
 
-.header-desc{	
-	padding-left: 80px;
+.header-desc {
+    padding: 0 30px;
+    @include media-tablet {
+        & {
+            padding: 0;
+            padding-left: 80px;
+        }
+    }
 }
 
 .header__vb-header {
+    padding: 0 25px;
     text-align: center;
     font-size: 3.6rem;
+    margin-bottom: 25px;
     @include media-tablet {
         & {
+            padding: 0;
             padding-right: 60px;
             margin-bottom: 15px;
             font-size: 4.5rem;
@@ -131,8 +143,8 @@
     @include media-pc {
         & {
             margin-bottom: 35px;
-            
-    padding-right: 115px;
+
+            padding-right: 115px;
 
             font-size: 6.8rem;
         }
@@ -140,9 +152,13 @@
 }
 
 .main-desc {
+    padding: 0 20px;
+    text-align: center;
     font-size: 1.4rem;
     @include media-tablet {
         & {
+            text-align: left;
+            padding: 0;
             font-size: 1.8rem;
             padding-right: 50px;
         }
@@ -156,8 +172,10 @@
 }
 
 .social {
+    display: none;
     @include media-tablet {
         & {
+            display: block;
             margin-top: 110px;
         }
     }
@@ -169,8 +187,16 @@
 }
 
 .social-icon {
-    font-size: 2.5em;
-    & + & {
+    font-size: 2.5em;    
+}
+
+.social-link{
+	display: inline-block;
+	transition: 0.5s ease-in-out;
+	& + & {
         margin-top: 20px;
     }
+	&:hover{
+		color: red;
+	}
 }
