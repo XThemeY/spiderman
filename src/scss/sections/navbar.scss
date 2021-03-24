@@ -1,10 +1,10 @@
 .navigationbar {
     padding-top: 30px;
     .navmenu {
-        position: fixed;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: 100%;
         background: rgba(0, 0, 0, 0.8);
         left: 100%;
@@ -102,7 +102,7 @@
                 height: auto;
                 background: none;
                 left: auto;
-                float: right;                
+                float: right;
                 display: block;
             }
         }
@@ -137,6 +137,7 @@
 }
 
 .toggle-menu {
+	position: relative;
     cursor: pointer;
     margin-right: 40px;
     display: flex;

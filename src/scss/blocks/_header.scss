@@ -8,31 +8,44 @@
     }
     @include media-pc {
         & {
-            height: 600px;
+			height: 760px;
         }
     }
 }
 .carousel {
     position: absolute;
     width: 100%;
+	height: inherit;
     z-index: -1;
+	@include media-tablet {
+        & {
+            height: inherit;
+        }
+    }
+    @include media-pc {
+        & {
+			height: inherit;
+        }
+    }
 }
 
 .carousel-inner {
+	height: 100%;
+	
 }
 
 .carousel-item {
-    height: 600px;
+	height: 100%;
     .carousel-bg-img {
         width: 362%;
         @include media-tablet {
             & {
-                width: 362%;
+                width: 155%;
             }
         }
         @include media-pc {
             & {
-                width: 100%;
+				width: 125%;
             }
         }
     }
@@ -41,38 +54,68 @@
 .spider-img {
     position: absolute;
     bottom: 0px;
-    left: 14%;
+    left: calc(100vw / 2 - 455px);
     width: 450px;
     height: auto;
+    @include media-tablet {
+        & {
+            left: calc(100vw / 2 - 335px);
+            width: 405px;
+        }
+    }
+    @include media-pc {
+        & {
+            left: calc(100vw / 2 - 455px);
+            width: 595px;
+        }
+    }
 }
 
 .fineas-img {
     position: absolute;
     bottom: 0px;
-    left: 15%;
+    left: calc(100vw / 2 - 455px);
     width: 415px;
     height: auto;
+    @include media-tablet {
+        & {
+			left: calc(100vw / 2 - 325px);
+            width: 345px;
+        }
+    }
+    @include media-pc {
+        & {
+            left: calc(100vw / 2 - 455px);
+            width: 520px;
+        }
+    }
 }
 
 .header-wrapper {
-    margin-right: 15px;
-
     margin-top: 95px;
     float: right;
     width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     @include media-tablet {
         & {
             width: 300px;
+            margin-right: 70px;
         }
     }
     @include media-pc {
         & {
-            width: 550px;
+            width: 570px;
+			margin-right: 25px;
+			margin-top: 185px;
         }
     }
+}
+
+.header-desc{	
+	padding-left: 80px;
 }
 
 .header__vb-header {
@@ -80,13 +123,17 @@
     font-size: 3.6rem;
     @include media-tablet {
         & {
+            padding-right: 60px;
+            margin-bottom: 15px;
             font-size: 4.5rem;
         }
     }
     @include media-pc {
         & {
             margin-bottom: 35px;
-            padding-right: 190px;
+            
+    padding-right: 115px;
+
             font-size: 6.8rem;
         }
     }
@@ -97,12 +144,33 @@
     @include media-tablet {
         & {
             font-size: 1.8rem;
+            padding-right: 50px;
         }
     }
     @include media-pc {
         & {
-            padding-right: 60px;
-            font-size: 2.4rem;
+            padding-right: 55px;
+            font-size: 2rem;
         }
+    }
+}
+
+.social {
+    @include media-tablet {
+        & {
+            margin-top: 110px;
+        }
+    }
+    @include media-pc {
+        & {
+            margin-top: 110px;
+        }
+    }
+}
+
+.social-icon {
+    font-size: 2.5em;
+    & + & {
+        margin-top: 20px;
     }
 }

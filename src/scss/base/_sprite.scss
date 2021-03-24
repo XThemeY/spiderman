@@ -1,19 +1,43 @@
 .icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    fill: currentColor;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
 }
 
 .icon-arrowDown {
-    font-size: (6/10) * 1rem;
-    width: (8/6) * 1em;
+	font-size:(6/10)*1rem;
+	width:(8/6)*1em;
+}
+.icon-facebook {
+	font-size:(512/10)*1rem;
+	width:(320/512)*1em;
+}
+.icon-github {
+	font-size:(512/10)*1rem;
+	width:(496/512)*1em;
+}
+.icon-instagram {
+	font-size:(512/10)*1rem;
+	width:(448/512)*1em;
 }
 .icon-scroll {
-    font-size: (263/10) * 1rem;
-    width: (16/263) * 1em;
+	font-size:(263/10)*1rem;
+	width:(16/263)*1em;
+}
+.icon-telegram {
+	font-size:(512/10)*1rem;
+	width:(496/512)*1em;
+}
+.icon-twitter {
+	font-size:(512/10)*1rem;
+	width:(512/512)*1em;
 }
 .icon-vector {
-    font-size: (64/10) * 1rem;
-    width: (42/64) * 1em;
+	font-size:(64/10)*1rem;
+	width:(42/64)*1em;
+}
+.icon-vk {
+	font-size:(512/10)*1rem;
+	width:(576/512)*1em;
 }
