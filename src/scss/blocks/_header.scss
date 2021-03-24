@@ -187,16 +187,16 @@
 }
 
 .social-icon {
-    font-size: 2.5em;    
+    font-size: 2.5em;
 }
 
-.social-link{
-	display: inline-block;
-	transition: 0.5s ease-in-out;
-	& + & {
+.social-link {
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    & + & {
         margin-top: 20px;
     }
-	&:hover{
-		color: red;
-	}
+    &:hover {
+        color: red;
+    }
 }
