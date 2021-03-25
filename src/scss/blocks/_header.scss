@@ -31,6 +31,29 @@
     }
 }
 
+.carousel-fade {
+    .carousel-item {
+        opacity: 0;
+    }
+    .carousel-item.active {
+        opacity: 0;
+        animation: fadeOut 15s 1;
+    }
+}
+
+@keyframes fadeOut {
+	0%{
+		opacity: 1;
+	}
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .carousel-inner {
     height: 100%;
 }
