@@ -1,32 +1,38 @@
 .header {
     width: 100%;
     min-width: 320px;
-    height: 600px;
+    height: 550px;
+
     @include media-tablet {
         & {
-            height: 600px;
-        }
-    }
-    @include media-pc {
-        & {
-            height: 760px;
+            height: 700px;
         }
     }
 }
 .carousel {
     position: absolute;
+    top: 0;
+    left: 50%;
     width: 100%;
-    min-width: inherit;
-    height: inherit;
+    min-width: 320px;
+    height: 600px;
     z-index: -1;
+    transform: translateX(-50%);
+
+	@include media-phone-horizontal {
+        & {
+            height:680px;
+        }
+    }
     @include media-tablet {
         & {
-            height: inherit;
+            height: 610px;
         }
     }
     @include media-pc {
         & {
-            height: inherit;
+            width: 1366px;
+            height: 700px;
         }
     }
 }
@@ -37,14 +43,15 @@
     }
     .carousel-item.active {
         opacity: 0;
-        animation: fadeOut 15s 1;
+        animation: fadeOut 5s 1;
     }
 }
 
+
 @keyframes fadeOut {
-	0%{
-		opacity: 1;
-	}
+    0% {
+        opacity: 1;
+    }
     80% {
         opacity: 1;
     }
@@ -59,6 +66,7 @@
 }
 
 .carousel-item {
+    position: relative;
     height: 100%;
     .carousel-bg-img {
         width: 362%;
@@ -69,7 +77,7 @@
         }
         @include media-pc {
             & {
-                width: 125%;
+                width: 100%;
             }
         }
     }
@@ -77,20 +85,20 @@
 
 .spider-img {
     position: absolute;
-    bottom: 0px;
-    left: calc(100vw / 2 - 120px);
-    width: 280px;
-    height: auto;
+    bottom: 0;
+    left: calc(50% + 30px);
+    width: 80%;
+    transform: translateX(-50%);
     @include media-tablet {
         & {
-            left: calc(100vw / 2 - 335px);
-            width: 405px;
+            left: calc(50% - 135px);
+            width: 55%;
         }
     }
     @include media-pc {
         & {
-            left: calc(100vw / 2 - 455px);
-            width: 595px;
+            left: calc(50% - 190px);
+            width: 40%;
         }
     }
 }
@@ -98,19 +106,21 @@
 .fineas-img {
     position: absolute;
     bottom: 0px;
-    left: calc(100vw / 2 - 95px);
-    width: 220px;
+    left: 50% ;
+    width: 60%;
     height: auto;
+    transform: translateX(-50%);
     @include media-tablet {
         & {
-            left: calc(100vw / 2 - 325px);
-            width: 345px;
+            left: calc(50% - 170px);
+    width: 50%;
         }
     }
     @include media-pc {
         & {
-            left: calc(100vw / 2 - 455px);
-            width: 520px;
+            left: calc(50% - 190px);
+            width: 35%;
+            
         }
     }
 }
@@ -127,7 +137,7 @@
             align-items: center;
             width: 300px;
             margin: 0;
-            margin-top: 90px;
+            margin-top: 110px;
             margin-right: 70px;
         }
     }
