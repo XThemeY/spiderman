@@ -35,12 +35,14 @@ header.header
 							a(href="#") Финеас Барнум
 	.container
 		.header-wrapper.clearfix
+			a(href="#").scroll-down
+					+icon('scroll')
 			.header-desc
 				h1.header__vb-header DevilOnCall Cosplay
 				p.main-desc
 					|Cтремление стать лучше берет начало от образа, с которого мы берём пример
 			.social
-				a(href="#").social-link
+				a(href="#").social-link.social-link--header
 					+icon("instagram","social-icon")
-				a(href="#").social-link
+				a(href="#").social-link.social-link--header
 					+icon("vk","social-icon")
