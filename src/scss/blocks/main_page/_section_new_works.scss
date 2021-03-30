@@ -17,18 +17,21 @@
     }
     .content-wrapper {
         display: flex;
-        @include media-tablet {
-            & {
-            }
-        }
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         @include media-pc {
             & {
+                align-items: normal;
+                justify-content: normal;
+                flex-direction: row;
             }
         }
     }
 }
 
-.section-header.section-header--mobile {
+.section-header.mobile {
     margin-bottom: 20px;
     @include media-tablet {
         & {
@@ -42,9 +45,31 @@
     }
 }
 
+.works-desc__item.mobile {
+    display: block;
+    margin-bottom: 40px;
+    text-align: center;
+    @include media-tablet {
+        & {
+            margin-bottom: 50px;
+        }
+    }
+    @include media-pc {
+        & {
+            display: none;
+        }
+    }
+    .subsection-header {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}
+
 #carouselSpiderWorks {
     position: relative;
-    width: 315px;
+    width: 290px;
 
     &::before {
         content: "";
@@ -56,10 +81,6 @@
         bottom: 0;
         background: rgba(134, 156, 183, 0.1);
 
-        @include media-tablet {
-            & {
-            }
-        }
         @include media-pc {
             & {
                 top: -25px;
@@ -88,10 +109,7 @@
     flex-direction: column;
     .section-header {
         display: none;
-        @include media-tablet {
-            & {
-            }
-        }
+
         @include media-pc {
             & {
                 display: block;
@@ -99,26 +117,18 @@
             }
         }
     }
-
-    @include media-tablet {
-        & {
-        }
-    }
-    @include media-pc {
-        & {
-        }
-    }
 }
 
 .works-desc__item {
     flex: 1;
-    padding-left: 20px;
+    display: none;
+    
     .subsection-header {
         margin-bottom: 5px;
         font-weight: 700;
         @include media-tablet {
             & {
-                margin-bottom: 40px;
+				margin-bottom: 10px;
             }
         }
         @include media-pc {
@@ -132,8 +142,7 @@
         font-size: 0.9rem;
         @include media-tablet {
             & {
-                font-size: 2rem;
-                padding-right: 90px;
+                font-size: 2rem;                
             }
         }
         @include media-pc {
@@ -145,13 +154,9 @@
         }
     }
 
-    @include media-tablet {
-        & {
-            padding-left: 50px;
-        }
-    }
     @include media-pc {
         & {
+            display: block;
             padding-left: 100px;
         }
     }
@@ -159,27 +164,27 @@
 
 .more-works {
     background: #080c25;
-    padding: 10px 5px 15px 20px;
-
+    padding: 15px 10px;
+    text-align: center;
     @include media-tablet {
         & {
-            padding-right: 10px;
-            padding-top: 10px;
-            padding-left: 50px;
-            padding-bottom: 15px;
+            padding: 15px 50px;
         }
     }
     @include media-pc {
         & {
+            text-align: left;
             padding-left: 100px;
             padding-bottom: 45px;
             padding-top: 45px;
         }
     }
     p {
-        font-size: 0.6rem;
+        font-size: 1.4rem;
+        margin-bottom: 5px;
         @include media-tablet {
             & {
+                margin-bottom: 10px;
                 font-size: 1.7rem;
             }
         }
@@ -191,10 +196,11 @@
         }
     }
     a {
+        margin: 0 auto;
         font-style: italic;
         position: relative;
         display: inline-block;
-        font-size: 1rem;
+        font-size: 1.4rem;
         z-index: 1;
 
         &::after {
@@ -213,11 +219,6 @@
             color: #ff0000;
         }
 
-        @include media-tablet {
-            & {
-                font-size: 1.6rem;
-            }
-        }
         @include media-pc {
             & {
                 margin-bottom: 10px;
@@ -230,29 +231,33 @@
 
 .btn-plane {
     position: absolute;
-    border-top-left-radius: 30px;
-    width: 45px;
-    height: 20px;
-
-    bottom: 0;
-    right: -1px;
+    border-top-left-radius: 20px;
+    width: 85px;
+    height: 35px;
+    border-top-right-radius: 20px;
+	bottom: -2px;
+    right: 5px;
     background: #080c25;
     @include media-tablet {
-        & {width: 60px;
-			height: 30px;			
-			right: 0px;
+        & {
+            width: 140px;
+            height: 60px;
         }
     }
     @include media-pc {
         & {
+			bottom: 0;
+            right: -1px;
+            border-top-right-radius: 0;
             width: 105px;
             height: 65px;
         }
     }
     .carousel-control-prev {
-        left: 15px;
+        left: 18px;
         @include media-tablet {
-            & {left: 20px;
+            & {
+                left: 30px;
             }
         }
         @include media-pc {
@@ -265,11 +270,16 @@
             content: "";
             position: absolute;
             display: block;
-            width: 15px;
-            height: 15px;
+            width: 25px;
+            height: 25px;
             border-radius: 50%;
             border: 1px solid #ff0000;
-            
+            @include media-tablet {
+                & {
+                    width: 35px;
+                    height: 35px;
+                }
+            }
             @include media-pc {
                 & {
                     width: 35px;
@@ -285,9 +295,10 @@
         }
     }
     .carousel-control-next {
-        right: 5px;
+        right: 18px;
         @include media-tablet {
             & {
+                right: 25px;
             }
         }
         @include media-pc {
@@ -300,13 +311,15 @@
             content: "";
             position: absolute;
             display: block;
-            width: 15px;
-            height: 15px;
+            width: 25px;
+            height: 25px;
             border-radius: 50%;
             border: 1px solid #ff0000;
 
             @include media-tablet {
                 & {
+                    width: 35px;
+                    height: 35px;
                 }
             }
             @include media-pc {
