@@ -1,0 +1,118 @@
+.section_why {
+    background-color: #171c22;
+    padding-bottom: 50px;
+
+    @include media-tablet {
+        & {
+            padding-bottom: 100px;
+        }
+    }
+    @include media-pc {
+        & {
+            padding-bottom: 190px;
+        }
+    }
+    .content-wrapper {
+        position: relative;
+        background: repeat center url(../img/mainpage/back_1.png);
+        @include media-tablet {
+            & {
+                padding: 15px;
+            }
+        }
+        @include media-pc {
+            & {
+                padding: 45px;
+                padding-top: 20px;
+            }
+        }
+        &::before {
+            position: absolute;
+            display: block;
+            content: "";
+            top: -20px;
+            height: 20px;
+            left: 0;
+            width: 100%;
+
+            background: repeat center url(../img/mainpage/back_1.png);
+            backdrop-filter: blur(10px);
+            @include media-tablet {
+                & {
+                    top: -40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .section-header {
+            margin-bottom: 15px;
+            @include media-tablet {
+                & {
+                    margin-bottom: 0;
+                }
+            }
+            @include media-pc {
+                & {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+    }
+}
+
+.why-desc {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    font-size: 1.4rem;
+    p {
+        @include media-tablet {
+            & {
+                padding-top: 20px;
+                margin-right: 5px;
+                font-size: 1.6rem;
+            }
+        }
+        @include media-pc {
+            & {
+                padding-top: 0px;
+                padding-left: 100px;
+                margin-right: 70px;
+                font-size: 2rem;
+            }
+        }
+    }
+    @include media-tablet {
+        & {
+            padding: 0;
+            flex-direction: row;
+            padding-bottom: 75px;
+        }
+    }
+    @include media-pc {
+        & {
+            padding-bottom: 85px;
+        }
+    }
+}
+
+.desc-img {
+    width: 180px;
+    margin-bottom: 20px;
+    @include media-tablet {
+        & {
+            margin-bottom: 0;
+            width: 265px;
+        }
+    }
+    @include media-pc {
+        & {
+            width: 365px;
+        }
+    }
+}

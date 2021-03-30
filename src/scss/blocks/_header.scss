@@ -18,24 +18,25 @@
         }
     }
 }
-.carousel {
+
+#carouselHeader {
     position: absolute;
     top: 0;
     left: 50%;
     width: 100%;
     min-width: 320px;
-    height: 600px;
+    height: 590px;
     z-index: -1;
     transform: translateX(-50%);
 
     @include media-phone-horizontal {
         & {
-            height: 680px;
+            height: 670px;
         }
     }
     @include media-tablet {
         & {
-            height: 610px;
+            height: 590px;
         }
     }
     @include media-pc {
@@ -44,15 +45,37 @@
             height: 700px;
         }
     }
-}
 
-.carousel-fade {
-    .carousel-item {
-        opacity: 0;
+    .carousel-inner {
+        height: 100%;
     }
-    .carousel-item.active {
-        opacity: 0;
-        animation: fadeOut 5s 1;
+
+    .carousel-item {
+        position: relative;
+        height: 100%;
+        .carousel-bg-img {
+            width: 362%;
+            @include media-tablet {
+                & {
+                    width: 155%;
+                }
+            }
+            @include media-pc {
+                & {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .carousel-fade {
+        .carousel-item {
+            opacity: 0;
+        }
+        .carousel-item.active {
+            opacity: 0;
+            animation: fadeOut 5s 1;
+        }
     }
 }
 
@@ -66,28 +89,6 @@
 
     100% {
         opacity: 0;
-    }
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-.carousel-item {
-    position: relative;
-    height: 100%;
-    .carousel-bg-img {
-        width: 362%;
-        @include media-tablet {
-            & {
-                width: 155%;
-            }
-        }
-        @include media-pc {
-            & {
-                width: 100%;
-            }
-        }
     }
 }
 
@@ -241,20 +242,20 @@
     }
 }
 
-.scroll-down {
-    display: none;
-    cursor: pointer;
-    padding: 5px;
-    position: absolute;
-    top: 15%;
-    left: -570px;
-    z-index: 2;
-    @include media-pc {
-        & {
-            display: block;
-        }
-    }
-}
-.icon-scroll {
-    font-size: 22rem;
-}
+// .scroll-down {
+//     display: none;
+//     cursor: pointer;
+//     padding: 5px;
+//     position: absolute;
+//     top: 15%;
+//     left: -570px;
+//     z-index: 2;
+//     @include media-pc {
+//         & {
+//             display: block;
+//         }
+//     }
+// }
+// .icon-scroll {
+//     font-size: 22rem;
+// }

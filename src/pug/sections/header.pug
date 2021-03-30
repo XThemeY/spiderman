@@ -2,21 +2,22 @@ include ../mixins/svgMixin
 
 header.header
 	.container
-		#carouselHeader.carousel.slide.carousel-fade(data-bs-ride='carousel' data-bs-interval="5000")
-			.carousel-inner
-				.carousel-item.active
-					img.carousel-bg-img.d-block(src='./img/header/bg_1.png' alt='...')
-					img.spider-img.d-block(src='./img/header/image_1.png' alt='...')
-				.carousel-item
-					img.fineas-img.d-block(src='./img/header/image_2.png' alt='...')
-				.carousel-item
-					img.carousel-bg-img.d-block(src='./img/header/bg_3.png' alt='...')
-			//- button.carousel-control-prev(type='button' data-bs-target='#carouselHeader' data-bs-slide='prev')
-			//- 	span.carousel-control-prev-icon(aria-hidden='true')
-			//- 	span.visually-hidden Previous
-			//- button.carousel-control-next(type='button' data-bs-target='#carouselHeader' data-bs-slide='next')
-			//- 	span.carousel-control-next-icon(aria-hidden='true')
-			//- 	span.visually-hidden Next
+		.carouselHeader
+			#carouselHeader.carousel.slide.carousel-fade(data-bs-ride='carousel' data-bs-interval="5000")
+				.carousel-inner
+					.carousel-item.active
+						img.carousel-bg-img.d-block(src='./img/header/bg_1.png' alt='...')
+						img.spider-img.d-block(src='./img/header/image_1.png' alt='...')
+					.carousel-item
+						img.fineas-img.d-block(src='./img/header/image_2.png' alt='...')
+					.carousel-item
+						img.carousel-bg-img.d-block(src='./img/header/bg_3.png' alt='...')
+				//- button.carousel-control-prev(type='button' data-bs-target='#carouselHeader' data-bs-slide='prev')
+				//- 	span.carousel-control-prev-icon(aria-hidden='true')
+				//- 	span.visually-hidden Previous
+				//- button.carousel-control-next(type='button' data-bs-target='#carouselHeader' data-bs-slide='next')
+				//- 	span.carousel-control-next-icon(aria-hidden='true')
+				//- 	span.visually-hidden Next
 	nav.navigationbar
 		label.toggle-menu.clearfix
 			span
@@ -35,8 +36,8 @@ header.header
 							a(href="#") Финеас Барнум
 	.container
 		.header-wrapper.clearfix
-			a(href="#").scroll-down
-					+icon('scroll')
+			//- a(href="#").scroll-down
+			//- 		+icon('scroll')
 			.header-desc
 				h1.header__vb-header DevilOnCall Cosplay
 				p.main-desc

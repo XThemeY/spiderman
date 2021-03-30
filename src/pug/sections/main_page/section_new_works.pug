@@ -1,0 +1,30 @@
+section.section_works
+	.container
+		h2.section-header.section-header--mobile
+			|Мои новые работы...
+		.content-wrapper
+			#carouselSpiderWorks.carousel.slide(data-bs-ride='carousel')
+				.carousel-inner
+					.carousel-item.active
+						img.d-block(src='./img/spider_new-works/photo-1.jpg' alt='...')
+					.carousel-item
+						img.d-block(src='./img/spider_new-works/photo-1.jpg' alt='...')
+				.btn-plane
+					button.carousel-control-prev(type='button' data-bs-target='#carouselSpiderWorks' data-bs-slide='prev')
+						span.carousel-control-prev-icon(aria-hidden='true')
+						span.visually-hidden Previous
+					button.carousel-control-next(type='button' data-bs-target='#carouselSpiderWorks' data-bs-slide='next')
+						span.carousel-control-next-icon(aria-hidden='true')
+						span.visually-hidden Next
+			.works-desc
+				h2.section-header
+					|Мои новые работы...
+				.works-desc__item
+					h3.subsection-header
+						|Spider Family 
+					p
+						|Паучья семья - встреча людей пауков в тёплой и уютной компании
+				.more-works 
+					p 
+						|"Вы строите ваши жизни, как пауки ткут свою паутину. Иногда нужно множество попыток, чтобы соткать одну-единственную нить."
+					a(href="#!").more-works--link Больше работ по образу
