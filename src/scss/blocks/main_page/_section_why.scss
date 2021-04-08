@@ -1,17 +1,13 @@
 .section_why {
     background-color: #171c22;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 
     @include media-tablet {
         & {
-            padding-bottom: 100px;
+            padding-bottom: 80px;
         }
     }
-    @include media-pc {
-        & {
-            padding-bottom: 190px;
-        }
-    }
+
     .content-wrapper {
         position: relative;
         background: repeat center url(../img/mainpage/back_1.png);

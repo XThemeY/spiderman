@@ -1,9 +1,10 @@
 .section_works {
-    padding: 25px 0;
+    padding-top: 25px;
+    padding-bottom: 60px;
     background: linear-gradient(
         215deg,
-        rgba(40, 45, 80, 1) 35%,
-        rgba(77, 145, 174, 0.5) 100%
+        rgba(40, 45, 80, 1) 10%,
+        rgba(77, 145, 174, 0.1) 100%
     );
     @include media-tablet {
         & {
@@ -12,7 +13,8 @@
     }
     @include media-pc {
         & {
-            padding: 150px 0;
+            padding-top: 200px;
+            padding-bottom: 300px;
         }
     }
     .content-wrapper {
@@ -67,7 +69,7 @@
     }
 }
 
-#carouselSpiderWorks {
+.custom-carousel {
     position: relative;
     width: 290px;
 
@@ -247,7 +249,7 @@
     @include media-pc {
         & {
             bottom: 0;
-            right: -1px;
+            right: -2px;
             border-top-right-radius: 0;
             width: 105px;
             height: 65px;

@@ -1,0 +1,35 @@
+section.section_works
+	.container
+		h2.section-header.mobile
+			|Мои новые работы...
+		.works-desc__item.mobile
+			h3.subsection-header
+				|"The greatest show"
+			p
+				|Фениас Тейлор Барнаби - мечтатель, гений, шоумен.
+		.content-wrapper
+			#carouselFineasWorks.custom-carousel.carousel.slide(data-bs-ride='carousel')
+				.carousel-inner
+					.carousel-item.active
+						img.d-block(src='./img/new-works/fineas.jpg' alt='...')
+					.carousel-item
+						img.d-block(src='./img/new-works/fineas.jpg' alt='...')
+				.btn-plane
+					button.carousel-control-prev(type='button' data-bs-target='#carouselFineasWorks' data-bs-slide='prev')
+						span.carousel-control-prev-icon(aria-hidden='true')
+						span.visually-hidden Previous
+					button.carousel-control-next(type='button' data-bs-target='#carouselFineasWorks' data-bs-slide='next')
+						span.carousel-control-next-icon(aria-hidden='true')
+						span.visually-hidden Next
+			.works-desc
+				h2.section-header
+					|Мои новые работы...
+				.works-desc__item
+					h3.subsection-header
+						|"The greatest show"
+					p
+						|Фениас Тейлор Барнаби - мечтатель, гений, шоумен. 
+				.more-works 
+					p 
+						|"Везение или неудача — не более чем сочетание случая, подготовки и решимости."
+					a(href="#!").more-works--link Больше работ по образу

@@ -3,26 +3,11 @@
 @import "../sections/navbar";
 @import "../blocks/mainpage";
 
-.container {
-    max-width: auto;
-    margin: 0 auto;
-    padding: 0 15px;
-    @include media-tablet {
-        & {
-            max-width: $mediaWidthTablet;
-        }
-    }
-    @include media-pc {
-        & {
-            max-width: $mediaWidthPC;
-        }
-    }
-}
 
 .section-header {
     text-align: center;
     font-size: 2.2rem;
-	text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
     @include media-tablet {
         & {
             font-size: 3.6rem;
@@ -35,10 +20,10 @@
     }
 }
 
-.subsection-header{	
-	font-family: $fontFamilyNotoSans;
-	font-size: 1.2rem; 
-	@include media-tablet {
+.subsection-header {
+    font-family: $fontFamilyNotoSans;
+    font-size: 1.2rem;
+    @include media-tablet {
         & {
             font-size: 2.6rem;
         }
@@ -50,14 +35,4 @@
     }
 }
 
-section{
-	width: 100%;
-    min-width: 320px;
-    margin: 0 auto;
 
-    @include media-pc {
-        & {
-            max-width: 1366px;
-        }
-    }
-}
