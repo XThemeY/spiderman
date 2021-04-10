@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link rel="stylesheet" href="libs/bootstrap-v5/bootstrap.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Kurale&amp;family=Open+Sans:wght@400;600;700&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="libs/owlCarousel/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="libs/owlCarousel/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <title>DevilOnCall Cosplay - Главная страница</title>
   </head>
@@ -190,8 +192,65 @@
       </div>
     </section>
     <section class="section_devider" style="background-image: url(./img/img-devider_2.jpg)"></section>
+    <section class="section_gallery">
+      <div class="container">
+        <div class="content-wrapper">
+          <h2 class="section-header section-header-gallery">Галерея моих образов</h2>
+          <div class="owl-carousel carousel-gallery"><a href="#"><img src="./img/gallery/img_1.png" alt=""/></a><a href="#"><img src="./img/new-works/spider.jpg" alt=""/></a><a href="#"><img src="./img/gallery/img_3.png" alt=""/></a><a href="#"><img src="./img/gallery/img_4.png" alt=""/></a><a href="#"><img src="./img/new-works/spider.jpg" alt=""/></a><a href="#"><img src="./img/gallery/img_2.png" alt=""/></a><a href="#"><img src="./img/gallery/img_3.png" alt=""/></a><a href="#"><img src="./img/new-works/fineas.jpg" alt=""/></a><a href="#"><img src="./img/gallery/img_3.png" alt=""/></a><a href="#"><img src="./img/gallery/img_4.png" alt=""/></a></div>
+        </div>
+      </div>
+    </section>
+    <section class="section_services" style="background-image: url(./img/ads-bg.jpg)">
+      <div class="container">
+        <div class="content-wrapper">
+          <h2 class="section-header section-header-services">Услуги аниматора</h2>
+          <p class="section-desc-services">Вы устали, вам хочется праздника, а любая подготовка к нему несет с собой хлопоты.<br>Аниматор- поможет вам сделать ваш праздник ярким и неповторимым. Я готов порадовать ваших детей, или провести ваш корпоротив, и подарить вам незабываемый праздник, в образе Человека Паука или Ф.Т.Барнума.</p>
+        </div>
+        <div class="form-section">
+          <h2 class="section-header section-header-services">Заявка на услуги</h2>
+          <p class="section-desc">
+             Вы можете заполнить форму ниже или связаться со мной в Instagram или ВКонтакте.</p>
+          <form class="order__form-content" id="order">
+            <div class="formgroup">
+              <div class="formgroup-left">
+                <input class="order__form-input" type="text" placeholder="Ваше имя"/>
+                <input class="order__form-input" type="text" placeholder="+7(___)___-__-__"/>
+                <input class="order__form-input" type="text" placeholder="Ваш Email"/>
+              </div>
+              <div class="formgroup-right">
+                <textarea class="order__form-textarea" name="comment" placeholder="Комментарий к заявке"></textarea>
+              </div>
+            </div>
+            <div class="formgroup--checkbox">
+              <input id="order-policy" type="checkbox"/>
+              <label class="order-policy-text" for="order-policy">Я согласен на обработку моих персональных данных. С Политикой в отношении обработки персональных данных ознакомлен и согласен.</label>
+            </div>
+            <button class="service-btn btn-order" type="submit">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="content-wrapper"> 
+          <div class="social-section">
+            <h3 class="section-header">DevilOnCall</h3>
+            <div class="social"><a class="social-link" href="#">
+                    <svg class="icon icon-instagram social-icon">
+                      <use xlink:href="./img/sprite/sprite.svg#instagram"></use>
+                    </svg></a><a class="social-link" href="#">
+                    <svg class="icon icon-vk social-icon">
+                      <use xlink:href="./img/sprite/sprite.svg#vk"></use>
+                    </svg></a></div>
+          </div>
+          <div class="break-line"></div>
+          <div class="rights-section"><span>2021 &copy; Designed by <a href="https://vk.com/id9609810">Galina Vesta</a></span><span> Developed by <a href="https://vk.com/xthemey">Artem Ivannikov</a></span></div>
+        </div>
+      </div>
+    </footer>
     <script src="libs/jquery-3.5.1.min.js"></script>
     <script src="libs/bootstrap-v5/bootstrap.bundle.min.js"></script>
+    <script src="libs/owlCarousel/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

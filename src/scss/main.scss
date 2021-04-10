@@ -23,7 +23,7 @@ body {
 
 img {
     width: 100%;
-    display: block;	
+    display: block;
 }
 
 a {
@@ -66,8 +66,10 @@ p {
 }
 
 button {
+    border: none;
     background: transparent;
     font-family: $fontFamilyMain;
+    color: white;
     &:focus {
         outline: none;
     }

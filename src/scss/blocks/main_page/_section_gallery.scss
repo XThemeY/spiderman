@@ -1,0 +1,115 @@
+.section_gallery {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: linear-gradient(
+        215deg,
+        rgba(40, 45, 80, 1) 10%,
+        rgba(77, 145, 174, 0.1) 100%
+    );
+
+    @include media-tablet {
+        & {
+            padding-top: 75px;
+            padding-bottom: 135px;
+        }
+    }
+    @include media-pc {
+        & {
+            padding-top: 150px;
+            padding-bottom: 190px;
+        }
+    }
+}
+.section-header-gallery {
+    margin-bottom: 50px;
+
+    @include media-tablet {
+        & {
+            margin-bottom: 75px;
+        }
+    }
+    @include media-pc {
+        & {
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.carousel-gallery {
+    .owl-nav {
+        display: flex;
+        justify-content: space-around;
+        @include media-pc {
+            & {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 100%;
+                transform: translateY(-50%);
+            }
+        }
+        button.owl-prev {
+            font-size: 7rem;
+            width: 100%;
+            @include media-pc {
+                & {
+                    position: absolute;
+                    top: -55px;
+                    left: -50px;
+                    width: auto;
+                }
+            }
+        }
+
+        button.owl-next {
+            position: relative;
+            font-size: 7rem;
+            width: 100%;
+            @include media-pc {
+                & {
+                    position: absolute;
+                    top: -55px;
+                    right: -50px;
+                    width: auto;
+                }
+            }
+        }
+    }
+
+    .owl-dots {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+    }
+
+    button.owl-dot {
+        width: 20px;
+        height: 20px;
+        background-color: #c4c4c4;
+        border-radius: 50%;
+        border: 1px solid white;
+        margin-right: 40px;
+
+        &:hover {
+            background-color: hsla(0, 0%, 77%, 0.5);
+            &.active {
+                background-color: rgba(255, 0, 0, 0.8);
+            }
+        }
+
+        &.active {
+            background-color: red;
+        }
+    }
+
+    .owl-item {
+        height: 430px;
+
+        img {
+            object-fit: cover;
+
+            height: 100%;
+        }
+    }
+}
