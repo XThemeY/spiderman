@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	});
 
 	$("#navAccordion").hover(function () {
-		if ($(window).width() > 576) {
+		if ($(window).width() > 499) {
 			$(".submenu").slideToggle('fast');
 		}
 	});
