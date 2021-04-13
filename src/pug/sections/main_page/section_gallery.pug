@@ -3,24 +3,59 @@ section.section_gallery
 		.content-wrapper
 			h2.section-header.section-header-gallery
 				|Галерея моих образов
-			.owl-carousel.carousel-gallery
-				a(href="#")
-					img(src="./img/gallery/img_1.png", alt="")
-				a(href="#")
-					img(src="./img/new-works/spider.jpg", alt="")
-				a(href="#")
-					img(src="./img/gallery/img_3.png", alt="")
-				a(href="#")
-					img(src="./img/gallery/img_4.png", alt="")
-				a(href="#")
-					img(src="./img/new-works/spider.jpg", alt="")
-				a(href="#")
-					img(src="./img/gallery/img_2.png", alt="")
-				a(href="#")
-					img(src="./img/gallery/img_3.png", alt="")
-				a(href="#")
-					img(src="./img/new-works/fineas.jpg", alt="")
-				a(href="#")
-					img(src="./img/gallery/img_3.png", alt="")
-				a(href="#")
-					img(src="./img/gallery/img_4.png", alt="")
+			.slider-wrap
+				// Slider main container
+				.swiper-container
+					// Additional required wrapper
+					.swiper-wrapper
+						// Slides
+						.swiper-slide
+							a(href="#").slide-item
+								img(src="./img/gallery/img_1.png", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/new-works/spider.jpg", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/gallery/img_2.png", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/new-works/spider.jpg", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/new-works/spider.jpg", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/gallery/img_3.png", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/new-works/spider.jpg", alt="")
+						.swiper-slide
+							a(href="#").slide-item
+								img(src="./img/gallery/img_1.png", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/new-works/spider.jpg", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/gallery/img_2.png", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/new-works/spider.jpg", alt="")
+						.swiper-slide
+							a(href="#").slide-item
+								img(src="./img/gallery/img_1.png", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/new-works/spider.jpg", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/gallery/img_2.png", alt="")
+						.swiper-slide 
+							a(href="#")
+								img(src="./img/new-works/spider.jpg", alt="")
+				// If we need pagination
+				.swiper-pagination
+				// If we need navigation buttons
+				.swiper-button-prev
+				.swiper-button-next

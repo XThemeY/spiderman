@@ -25,27 +25,61 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	});
 
-	$('.owl-carousel').owlCarousel({
-		loop: true,
-		nav: true,
+	// $('.owl-carousel').owlCarousel({
+	// 	loop: true,
+	// 	nav: true,
 
-		responsive: {
-			0: {
-				items: 1,
-				dots: false,
-				margin: 20,
+	// 	responsive: {
+	// 		0: {
+	// 			items: 1,
+	// 			dots: false,
+	// 			margin: 20,
+	// 		},
+	// 		768: {
+	// 			items: 2,
+	// 			dots: false,
+	// 			margin: 40,
+	// 		},
+	// 		1000: {
+	// 			items: 4,
+	// 			dots: true,
+	// 			margin: 40,
+	// 		}
+	// 	}
+	// })
+
+	new Swiper('.swiper-container', {
+
+		slidesPerView: 4,
+
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+			type: 'fraction',
+		},
+
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		spaceBetween: 30,
+		freeMode: true,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 20,
 			},
 			768: {
-				items: 2,
-				dots: false,
-				margin: 40,
+				slidesPerView: 2,
+				spaceBetween: 30,
 			},
-			1000: {
-				items: 4,
-				dots: true,
-				margin: 40,
-			}
-		}
-	})
-
+			992: {
+				slidesPerView: 3,
+			},
+			1200: {
+				slidesPerView: 4,
+			},
+		},
+	});
 });
