@@ -1,0 +1,121 @@
+.hero-about {
+    margin-top: -15px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
+    background-color: #1c475c;
+    @include media-tablet {
+        & {
+            margin-top: -30px;
+        }
+    }
+    @include media-custom("991px") {
+        & {
+            margin-top: -5px;
+        }
+    }
+    @include media-pc {
+        & {
+            padding-top: 100px;
+            margin-top: -90px;
+        }
+    }
+
+    .content-wrapper {
+        position: relative;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @include media-tablet {
+            & {
+                margin-top: -70px;
+                padding: 0;
+                flex-direction: row;
+            }
+        }
+
+        @include media-pc {
+            & {
+                margin-top: -130px;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+        }
+
+        .content-img {
+            padding: 0 15px;
+            margin-bottom: 20px;
+            font-size: 0.8rem;
+            color: #d8d8d8;
+            flex: 0 0 33%;
+            @include media-tablet {
+                & {
+                    font-size: 1rem;
+                    padding-left: 0;
+                }
+            }
+
+            @include media-pc {
+                & {
+                    font-size: 1.4rem;
+                }
+            }
+            .cover-img {
+                margin-bottom: 5px;
+            }
+        }
+        .content-desc {
+            font-size: 1.3rem;
+            line-height: 1.5;
+            flex: 1 1 67%;
+            p {
+                padding: 1px 0;
+            }
+            @include media-tablet {
+                & {
+                    flex-direction: row;
+                }
+            }
+
+            @include media-pc {
+                & {
+                    font-size: 2rem;
+                    margin-top: 130px;
+                }
+            }
+        }
+    }
+}
+
+.spidey-cover {
+    position: absolute;
+    right: -7px;
+    bottom: -112px;
+    width: 139px;
+
+    @include media-custom("576px") {
+        & {
+            width: 177px;
+            right: -24px;
+            bottom: -134px;
+        }
+    }
+    @include media-tablet {
+        & {
+            width: 238px;
+
+            right: -22px;
+            bottom: -170px;
+        }
+    }
+
+    @include media-pc {
+        & {
+            width: 300px;
+
+            bottom: -209px;
+        }
+    }
+}

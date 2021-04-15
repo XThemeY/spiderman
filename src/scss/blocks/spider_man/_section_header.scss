@@ -141,7 +141,7 @@
 
                     width: 25%;
                     height: 36px;
-                    background-color: #245c77;
+                    background-color: #1c475c;
 
                     @include media-custom("991px") {
                         & {
@@ -190,27 +190,4 @@
             font-size: 2rem;
         }
     }
-}
-.section-spider {
-    background-color: #245c77;
-    margin-top: -15px;
-    @include media-tablet {
-        & {
-            margin-top: -30px;
-        }
-    }
-    @include media-custom("991px") {
-        & {
-            margin-top: -5px;
-        }
-    }
-    @include media-pc {
-        & {
-            margin-top: -90px;
-        }
-    }
-}
-.spiderman {
-    width: 100%;
-    height: 300px;
 }

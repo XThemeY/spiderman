@@ -18,7 +18,7 @@
         <div class="container">
           <label class="logo">DevilOnCall</label>
           <ul class="navmenu clearfix">
-            <li><a href="#">Главная</a></li>
+            <li><a href="index.html">Главная</a></li>
             <li id="navAccordion"><a href="#">Мои работы</a>
                   <svg class="icon icon-arrowDown ">
                     <use xlink:href="./img/sprite/sprite.svg#arrowDown"></use>
@@ -37,7 +37,7 @@
             <div class="header-content-wrapper">
               <div class="content-text">
                 <h2 class="section-header">Человек-паук</h2>
-                <p class="section-desc">Человек-Паук вымышленный герой серии комиксов "MARVEL" завоевавший любовь публики в 1962 году</p><a class="btn custom-btn btn-call" href="index.html">Заказать звонок</a>
+                <p class="section-desc">Человек-Паук &mdash; вымышленный герой серии комиксов "MARVEL" завоевавший любовь публики в 1962 году</p><a class="btn custom-btn btn-call" href="index.html">Заказать звонок</a>
               </div>
               <div class="content-img"> 
                 <div class="spider-img"><img src="./img/spiderman/spiderman.png" alt=""/></div>
@@ -47,11 +47,53 @@
         </div>
       </div>
     </header>
-    <div class="section-spider"> 
-      <div class="container">
-        <div class="spiderman"></div>
+    <section class="hero-about"> 
+      <div class="container"> 
+        <div class="content-wrapper">
+          <div class="content-img">
+            <div class="cover-img"><img src="./img/spiderman/cover_1.jpg" alt=""/></div>
+            <p>Человек-паук на обложке</p>
+            <p>Художники: Джей Скотт Кэмпбелл и Тим Тон Таунсенд</p>
+          </div>
+          <div class="content-desc"> 
+            <p>История данного героя (настоящее имя Питер Бенджамин Паркер) начинается вокруг подростка, воспитанного дядей и тетей, получивший удивительные способности, в ходе научной выставки, которого укусил радиоактивный паук. Радиация развила способности паука и передала их Питеру.</p>
+            <p>
+               Питер обрел невероятную силу, ловкость и способность ползать по стенам.</p>
+            <p>
+               Завораживающая история персонажа, продолжается до сех пор,и хоть герой уже повзрослел, но любовь публики к данному персонажу растет с каждым годом.</p>
+            <p>
+               Для меня данный герой, с малых лет, был примером стойкости. Какие бы неудачи, не постигли бы его, он находил в себе силы подняться и идти вперёд, даря надежду для других.</p>
+          </div>
+          <div class="spidey-cover"><img src="./img/spiderman/spider_1.png" alt=""/></div>
+        </div>
       </div>
-    </div>
+    </section>
+    <section class="section_services" style="background-image: url(./img/ads-bg.jpg)">
+      <div class="container">
+        <div class="form-section">
+          <h2 class="section-header section-header-services">Обратная связь</h2>
+          <p class="section-desc">
+             По вопросам сотрудничества Вы можете заполнить форму ниже или связаться со мной в Instagram или ВКонтакте.</p>
+          <form class="order__form-content" id="order">
+            <div class="formgroup">
+              <div class="formgroup-left">
+                <input class="order__form-input" type="text" placeholder="Ваше имя"/>
+                <input class="order__form-input" type="text" placeholder="+7(___)___-__-__"/>
+                <input class="order__form-input" type="text" placeholder="Ваш Email"/>
+              </div>
+              <div class="formgroup-right">
+                <textarea class="order__form-textarea" name="comment" placeholder="Комментарий к заявке"></textarea>
+              </div>
+            </div>
+            <div class="formgroup--checkbox">
+              <input id="order-policy" type="checkbox"/>
+              <label class="order-policy-text" for="order-policy">Я согласен на обработку моих персональных данных. <a href="#!">С Политикой в отношении обработки персональных данных ознакомлен и согласен.</a></label>
+            </div>
+            <button class="service-btn btn-order" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container"> 
         <div class="content-wrapper"> 
