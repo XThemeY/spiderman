@@ -1,0 +1,46 @@
+.error-wrapper {
+    padding-top: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-error {
+    .overlay-image {
+        height: 530px;
+        position: relative;
+        @include media-tablet {
+            & {
+                height: 700px;
+            }
+        }
+        @include media-pc {
+            & {
+                height: 500px;
+            }
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0) 80%,
+                #171c22 99%
+            );
+        }
+    }
+}
+
+.error-link {
+    margin-top: 30px;
+    font-size: 3rem;
+    border-width: 2px;
+    text-align: center;
+}

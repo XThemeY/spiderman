@@ -1,22 +1,7 @@
 include ../mixins/svgMixin
 
 header.header
-	nav.navigationbar
-		label.toggle-menu.clearfix
-			span
-		.container
-			label.logo DevilOnCall
-			ul.navmenu.clearfix
-				li
-					a(href="#") Главная
-				li#navAccordion
-					a(href="#") Мои работы
-					+icon("arrowDown")
-					ul.submenu
-						li
-							a(href="#") Человек Паук
-						li
-							a(href="#") Финеас Барнум
+	include ./navigation
 	#carouselHeader.carousel.slide(data-bs-ride="carousel" data-bs-interval="10000")
 		.carousel-inner
 			.carousel-item.active
@@ -28,7 +13,7 @@ header.header
 							p.slide-desc
 								|Cтремление стать лучше берет начало от образа, с которого мы берём пример
 							.social
-								a(href="#").social-link.social-link--header
+								a(href="/404.html").social-link.social-link--header
 									+icon("instagram","social-icon")
 								a(href="#").social-link.social-link--header
 									+icon("vk","social-icon")
